@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  # App service
+  app-service:
+    build: .
+    image: app-service
+    container_name: app-service
+    ports:
+      - 4000:4000
+    environment:
+      - PORT=4000
+      - DB_URL=mongodb+srv://mamun:ptWFmo8Hl7bXybaE@cluster0.vxoak.mongodb.net/colozai-auth
+      - JWT_SECRET=404E635266556A586E3272357538782F7638792F423F4428472B4B6250655368xysfsdf
+
+    networks:
+      - app-container-network
+
+networks:
+  app-container-network:
+    name: app-container-network
+    driver: bridge
