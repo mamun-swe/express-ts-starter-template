@@ -19,8 +19,8 @@ EXPOSE 4000
 
 # Set ENV variables
 ENV PORT=4000
-ENV DB_URL=mongodb+srv://mamun:ptWFmo8Hl7bXybaE@cluster0.vxoak.mongodb.net/colozai-auth
-ENV JWT_SECRET=404E635266556A586E3272357538782F7638792F423F4428472B4B6250655368xysfsdf
+ENV DB_URL=
+ENV JWT_SECRET=
 
 # Open CMD & execute command
 CMD [ "npm", "start"]
