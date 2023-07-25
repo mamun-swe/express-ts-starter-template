@@ -22,6 +22,6 @@ if (cluster.isMaster) {
   /* Start app to specific PORT & establish database connection */
   app.listen(port, () => {
     dbConnection();
-    console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
+    console.log(`🚀 [server]: Server is running at http://localhost:${port}`);
   });
 }
